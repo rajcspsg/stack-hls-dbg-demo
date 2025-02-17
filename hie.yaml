@@ -1,0 +1,10 @@
+cradle:
+  cabal:
+    - path: "src"
+      component: "lib:stack-hls-dbg-demo"
+
+    - path: "app/Main.hs"
+      component: "stack-hls-dbg-demo:exe:stack-hls-dbg-demo-exe"
+
+    - path: "test"
+      component: "stack-hls-dbg-demo:test:stack-hls-dbg-demo-test"

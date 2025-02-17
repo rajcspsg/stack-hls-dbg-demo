@@ -1,0 +1,5 @@
+.stack-work/
+*~.vscode
+.vscode
+dist-newstyle
+stack.yaml.lock
