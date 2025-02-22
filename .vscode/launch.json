@@ -60,6 +60,25 @@
             "logFile": "${workspaceFolder}/.vscode/phoityne.log",
             "logLevel": "WARNING",
             "forceInspect": false
+        },
+        {
+            "type": "ghc",
+            "request": "launch",
+            "name": "haskell(cabal) - test",
+            "internalConsoleOptions": "openOnSessionStart",
+            "workspace": "${workspaceFolder}",
+            "startup": "${workspaceFolder}/test/Spec.hs",
+            "startupFunc": "",
+            "startupArgs": "",
+            "stopOnEntry": false,
+            "mainArgs": "",
+            "ghciPrompt": "H>>= ",
+            "ghciInitialPrompt": "> ",
+            "ghciCmd": "cabal repl -w ghci-dap --build-depends QuickCheck --repl-no-load --builddir=${workspaceFolder}/.vscode/dist-cabal-repl",
+            "ghciEnv": {},
+            "logFile": "${workspaceFolder}/.vscode/phoityne.log",
+            "logLevel": "WARNING",
+            "forceInspect": false
         }
     ]
 }
